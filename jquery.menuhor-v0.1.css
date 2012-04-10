@@ -1,2 +1,57 @@
-/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
-.menu-horizontal,.menu-horizontal ul{list-style-type:none;margin:0;padding:0;clear:both}.menu-horizontal:after{content:' ';display:block;clear:both;width:0;height:0}.menu-horizontal>li,.menu-horizontal .first-level{position:relative;display:block;float:left}.menu-horizontal>li a,.menu-horizontal .first-level a{display:block;text-decoration:none;background-color:#a9d06a;color:#000;border-right:1px solid #cde99f;padding:5px 30px}.menu-horizontal>li a:hover,.menu-horizontal li.first-level a:hover{background-color:#eed06a}.menu-horizontal>li.active>a,.menu-horizontal li.first-level.active>a{background-color:#eed06a}.menu-horizontal ul,.menu-horizontal ul.submenu{display:none;position:absolute;left:0;border:1px solid #cde99f;width:99%}.menu-horizontal>li ul a,.menu-horizontal .first-level ul a{border:0;border-bottom:1px solid #cde99f;padding:3px 10px;background-color:#a9d06a;color:#000}.menu-horizontal>li ul a:hover,.menu-horizontal .first-level ul a:hover{background-color:#eed06a}
+.menu-horizontal,.menu-horizontal ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    clear: both
+}
+
+.menu-horizontal:after {
+    content: ' ';
+    display: block;
+    clear: both;
+    width: 0;
+    height: 0
+}
+
+.menu-horizontal>li,.menu-horizontal .first-level {
+    position: relative;
+    display: block;
+    float: left
+}
+
+.menu-horizontal>li a,.menu-horizontal .first-level a {
+    display: block;
+    text-decoration: none;
+    background-color: #a9d06a;
+    color: #000;
+    border-right: 1px solid #cde99f;
+    padding: 5px 30px
+}
+
+.menu-horizontal>li a:hover,.menu-horizontal li.first-level a:hover {
+    background-color: #eed06a
+}
+
+.menu-horizontal>li.active>a,.menu-horizontal li.first-level.active>a {
+    background-color: #eed06a
+}
+
+.menu-horizontal ul,.menu-horizontal ul.submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    border: 1px solid #cde99f;
+    width: 99%
+}
+
+.menu-horizontal>li ul a,.menu-horizontal .first-level ul a {
+    border: 0;
+    border-bottom: 1px solid #cde99f;
+    padding: 3px 10px;
+    background-color: #a9d06a;
+    color: #000
+}
+
+.menu-horizontal>li ul a:hover,.menu-horizontal .first-level ul a:hover {
+    background-color: #eed06a
+}

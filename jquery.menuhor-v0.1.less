@@ -1,0 +1,75 @@
+/* Declaracion de Variables */
+@firstLevelBG: #A9D06A; /* Color para el fondo de los enlaces del primer nivel */
+@firstLevelFG: #000; /* Color para los enlaces del primer nivel */
+@firstLevelBorder: #CDE99F; /* Color para el borde de los enlaces del primer nivel */
+@firstLevelBGHover: #EED06A; /* Color para el fondo para el evento hover del primer nivel */
+
+@subLevelBG: #A9D06A; /* Color para el fondo de los enlaces del sub nivel */
+@subLevelFG: #000; /* Color para los enlaces del sub nivel */
+@subLevelBorder: #CDE99F; /* Color para el borde de los enlaces del sub nivel */
+@subLevelBGHover: #EED06A; /* Color para el fondo para el evento hover del sub nivel */
+
+.menu-horizontal, .menu-horizontal ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	clear:both;
+}
+.menu-horizontal:after {
+	content: ' ';
+	display: block;
+	clear:both;
+	width:0;
+	height:0;
+}
+
+/* Elementos del Primer Nivel */
+.menu-horizontal > li, .menu-horizontal .first-level {
+	position:relative;
+	display:block;
+	float:left;
+}
+
+/* Enlaces Primer Nivel e Inferiores */
+.menu-horizontal > li a,.menu-horizontal .first-level a {
+	display:block;
+	text-decoration:none;
+	background-color: @firstLevelBG;
+	color: @firstLevelFG;
+	border-right:1px solid @firstLevelBorder;
+	/*line-height:15px;*/
+	padding:5px 30px;
+}
+
+/* Enlaces Primer Nivel e Inferiores Sobre */
+.menu-horizontal > li a:hover,.menu-horizontal li.first-level a:hover {
+	background-color: @firstLevelBGHover;
+}
+
+/* Enlace cuando submenu esta desplegado */
+.menu-horizontal > li.active > a,.menu-horizontal li.first-level.active > a {
+	background-color: @firstLevelBGHover;
+}
+
+/* Submenu */
+.menu-horizontal ul, .menu-horizontal ul.submenu {
+	display:none;
+	position:absolute;
+	/*top:30px;*/
+	left:0;
+	border:1px solid @subLevelBorder;
+	width:99%;
+}
+
+/* Enlaces Submenu o Segundo Nivel */
+.menu-horizontal > li ul a, .menu-horizontal .first-level ul a {
+	border:none;
+	border-bottom:1px solid @subLevelBorder;
+	padding:3px 10px;
+	background-color: @subLevelBG;
+	color: @subLevelFG;
+}
+
+.menu-horizontal > li ul a:hover, .menu-horizontal .first-level ul a:hover {
+	background-color: @subLevelBGHover;
+}
